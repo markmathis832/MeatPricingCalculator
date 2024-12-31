@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Meat Pricing Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Meat Pricing Calculator</h1>
+    
+    <div class="input-section">
+      <label for="baseCost">Base Cost ($):</label>
+      <input type="number" id="baseCost" placeholder="Enter the base cost" />
+    </div>
+
+    <div class="input-section">
+      <label for="markup">Markup (%) :</label>
+      <input type="number" id="markup" placeholder="e.g. 25" />
+    </div>
+
+    <div class="input-section">
+      <label for="weight">Weight (lbs):</label>
+      <input type="number" id="weight" placeholder="Enter weight in lbs" />
+    </div>
+
+    <button id="calculateBtn">Calculate</button>
+
+    <div class="result">
+      <p id="priceOutput">Price per lb: $<span id="perLbPrice">0.00</span></p>
+      <p id="totalOutput">Total Price: $<span id="totalPrice">0.00</span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
